@@ -59,3 +59,28 @@ jobs:
       - store_artifacts:
           path: /tmp/test-results
           destination: test-resultsg
+
+  deploy:
+      docker:
+        - image: circleci/ruby:2.4.1-node-browsers
+
+      steps:
+        - checkout
+        - run: bash .circleci/setup-heroku.sh
+        - add_ssh_keys:
+            fingerprints:
+              - "SHA256:UU7iXV+liwDH6EP1tVnedTTgo8cWcCjHjR4yYvDcs6M"
+        - deploy:
+            name: Deploy To Heroku
+            command: |
+              if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                git push heroku master
+              fi
+workflows:
+  version: 2
+  test_and_deploy:
+    jobs:
+      - test
+      - deploy:
+          requires:
+            - test
