@@ -44,7 +44,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'rubocop'
   gem 'vcr', '~> 3.0'
-
+  gem 'rspec_junit_formatter'
   gem 'webmock', require: false
 end
 
