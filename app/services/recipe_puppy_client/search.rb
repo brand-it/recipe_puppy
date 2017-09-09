@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module RecipePuppyClient
   class Search < RecipePuppyClient::Base
     attr_accessor :recipes
