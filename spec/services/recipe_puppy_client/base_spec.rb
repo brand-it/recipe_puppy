@@ -34,7 +34,6 @@ RSpec.describe RecipePuppyClient::Base do
       subject { base.verify_response(redirect) }
       it { expect { subject }.to raise_exception RecipePuppyClient::Redirect }
     end
-
   end
 
   describe '.setup' do

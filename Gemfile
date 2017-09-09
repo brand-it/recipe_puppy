@@ -42,9 +42,9 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'dotenv-rails'
   gem 'rspec-rails', '~> 3.5'
+  gem 'rspec_junit_formatter'
   gem 'rubocop'
   gem 'vcr', '~> 3.0'
-  gem 'rspec_junit_formatter'
   gem 'webmock', require: false
 end
 
