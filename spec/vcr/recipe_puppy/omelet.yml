@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.recipepuppy.com/api/?i=onions,garlic&key=&p=3&q=omelet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 09 Sep 2017 20:45:19 GMT
+      Server:
+      - Apache/2.2.9 (Ubuntu) PHP/5.2.6-2ubuntu4.6 with Suhosin-Patch mod_ssl/2.2.9
+        OpenSSL/0.9.8g mod_wsgi/4.5.7 Python/2.6
+      X-Powered-By:
+      - PHP/5.2.6-2ubuntu4.6
+      Set-Cookie:
+      - kohanasession=8b8311f951468e39abfe4a75c29e40af; expires=Sat, 09 Sep 2017 22:45:19
+        GMT; path=/
+      - kohanasession=8b8311f951468e39abfe4a75c29e40af; expires=Sat, 09-Sep-2017 22:45:19
+        GMT; path=/
+      - kohanasession_data=c2Vzc2lvbl9pZHxzOjMyOiI4YjgzMTFmOTUxNDY4ZTM5YWJmZTRhNzVjMjllNDBhZiI7dG90YWxfaGl0c3xpOjE7X2tmX2ZsYXNoX3xhOjA6e311c2VyX2FnZW50fHM6MDoiIjtpcF9hZGRyZXNzfHM6MTU6IjE3My4xNzQuMTM2LjEwOCI7bGFzdF9hY3Rpdml0eXxpOjE1MDQ5ODk5MTk7;
+        expires=Sat, 09-Sep-2017 22:45:19 GMT; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '2966'
+      Content-Type:
+      - text/javascript
+    body:
+      encoding: UTF-8
+      string: '{"title":"Recipe Puppy","version":0.1,"href":"http:\/\/www.recipepuppy.com\/","results":[{"title":"Vegetable-Pasta
+        Oven Omelet","href":"http:\/\/find.myrecipes.com\/recipes\/recipefinder.dyn?action=displayRecipe&recipe_id=520763","ingredients":"tomato,
+        onions, red pepper, garlic, olive oil, zucchini, cream cheese, vermicelli,
+        eggs, parmesan cheese, milk, italian seasoning, salt, black pepper","thumbnail":"http:\/\/img.recipepuppy.com\/560556.jpg"},{"title":"Roasted
+        Pepper and Bacon Omelet","href":"http:\/\/www.bigoven.com\/43919-Roasted-Pepper-and-Bacon-Omelet-recipe.html","ingredients":"eggs,
+        salt, black pepper, butter, black pepper, bacon, onions, garlic, roasted red
+        peppers, oregano, black pepper","thumbnail":""},{"title":"\nBroccoli Oven
+        Omelet Recipe\n\n","href":"http:\/\/cookeatshare.com\/recipes\/broccoli-oven-omelet-92851","ingredients":"eggs,
+        broccoli, onions, parmesan cheese, lowfat milk, salt, basil, garlic, tomato,
+        parmesan cheese","thumbnail":""},{"title":"Eggplant Omelet with Coriander
+        and Caraway","href":"http:\/\/www.epicurious.com\/recipes\/food\/views\/Eggplant-Omelet-with-Coriander-and-Caraway-306","ingredients":"caraway
+        seed, coriander, eggplant, eggs, garlic, lemon, olive oil, onions, black pepper,
+        salt","thumbnail":""},{"title":"Eggplant Omelet with Coriander And Caraway","href":"http:\/\/www.bigoven.com\/143831-Eggplant-Omelet-with-Coriander-And-Caraway-recipe.html","ingredients":"eggplant,
+        olive oil, onions, garlic, egg, caraway seed, coriander, salt, black pepper,
+        lemon","thumbnail":""},{"title":"Broccoli and Cheese Omelet","href":"http:\/\/www.bigoven.com\/45151-Broccoli-and-Cheese-Omelet-recipe.html","ingredients":"onions,
+        garlic, chicken broth, cottage cheese, oregano, black pepper, egg substitute,
+        bread, mozzarella cheese, butter","thumbnail":""},{"title":"Chard And Onion
+        Omelet","href":"http:\/\/www.bigoven.com\/149383-Chard-And-Onion-Omelet-recipe.html","ingredients":"olive
+        oil, onions, leaves, garlic, eggs, parsley, basil, thyme, gruyere cheese,
+        parmesan cheese","thumbnail":""},{"title":"Picnic Omelet Squares Recipe","href":"http:\/\/www.cdkitchen.com\/recipes\/recs\/2184\/Picnic-Omelet-Squares99498.shtml","ingredients":"eggs,
+        garlic, parmesan cheese, olive oil, onions, peas, potato, red pepper, salt,
+        tomato, zucchini","thumbnail":""},{"title":"Spanish Omelet","href":"http:\/\/www.cooks.com\/rec\/view\/0,185,153160-249194,00.html","ingredients":"vegetable
+        oil, green pepper, onions, water, milk, eggs, black pepper, mushroom, garlic,
+        salt, chili powder","thumbnail":""},{"title":"Onion and Fresh Herb Omelet
+        with Mixed Greens","href":"http:\/\/find.myrecipes.com\/recipes\/recipefinder.dyn?action=displayRecipe&recipe_id=1622444","ingredients":"egg
+        substitute, milk, parsley, thyme, salt, black pepper, eggs, flour, nonstick
+        cooking spray, onions, garlic, salad greens, salad greens, red wine vinegar,
+        olive oil, goat cheese, almonds","thumbnail":"http:\/\/img.recipepuppy.com\/514820.jpg"}]}'
+    http_version: 
+  recorded_at: Sat, 09 Sep 2017 20:46:36 GMT
+recorded_with: VCR 3.0.3
