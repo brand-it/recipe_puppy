@@ -58,7 +58,7 @@ jobs:
           path: /tmp/test-results
       - store_artifacts:
           path: /tmp/test-results
-          destination: test-resultsg
+          destination: test-results
 
   deploy:
       docker:
