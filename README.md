@@ -1,24 +1,15 @@
-# README
+[![CircleCI](https://circleci.com/gh/newdark/recipe_puppy.svg?style=svg)](https://circleci.com/gh/newdark/recipe_puppy)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Setup
 
-Things you may want to cover:
+Just have to execute the bin/setup script
 
-* Ruby version
+```shell
+$ bin/setup
+```
 
-* System dependencies
+after that should start and be all happy
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```shell
+bundle exec rails s
+```
