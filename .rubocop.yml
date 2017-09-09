@@ -1,0 +1,76 @@
+Metrics/LineLength:
+  Max: 125
+
+Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - "**/*_spec.rb"
+    - spec/*
+    - spec/**/*
+    - spec/**/**/*
+    - spec/**/**/**/*
+    - config/routes.rb
+    - Gemfile
+
+# Common configuration.
+AllCops:
+
+  Exclude:
+    - 'log/*'
+    - 'tmp/**/*'
+    - '.DS_Store'
+    - 'public/assets/*'
+    - 'public/503.html'
+    - '.env'
+    - '*.pem'
+    - '*.orig'
+    - 'lib/templates/rails/**/*'
+    - db/schema.rb
+    - bin/setup
+    - bot/**/*
+    - lib/tasks/*
+    - db/seeds.rb
+
+  # Default formatter will be used if no -f/--format option is given.
+  DefaultFormatter: progress
+  # Cop names are not displayed in offense messages by default. Change behavior
+  # by overriding DisplayCopNames, or by giving the -D/--display-cop-names
+  # option.
+  DisplayCopNames: true
+  # Style guide URLs are not displayed in offense messages by default. Change
+  # behavior by overriding DisplayStyleGuide, or by giving the
+  # -S/--display-style-guide option.
+  DisplayStyleGuide: true
+  # Extra details are not displayed in offense messages by default. Change
+  # behavior by overriding ExtraDetails, or by giving the
+  # -E/--extra-details option.
+  ExtraDetails: false
+  # Additional cops that do not reference a style guide rule may be enabled by
+  # default. Change behavior by overriding StyleGuideCopsOnly, or by giving
+  # the --only-guide-cops option.
+  StyleGuideCopsOnly: false
+  # All cops except the ones in disabled.yml are enabled by default. Change
+  # this behavior by overriding DisabledByDefault. When DisabledByDefault is
+  # true, all cops in the default configuration are disabled, and and only cops
+  # in user configuration are enabled. This makes cops opt-in instead of
+  # opt-out. Note that when DisabledByDefault is true, cops in user
+  # configuration will be enabled even if they don't set the Enabled parameter.
+  DisabledByDefault: false
+  # Enables the result cache if true. Can be overridden by the --cache command
+  # line option.
+  UseCache: true
+  # Threshold for how many files can be stored in the result cache before some
+  # of the files are automatically removed.
+  MaxFilesInCache: 20000
+  # The cache will be stored in "rubocop_cache" under this directory. The name
+  # "/tmp" is special and will be converted to the system temporary directory,
+  # which is "/tmp" on Unix-like systems, but could be something else on other
+  # systems.
+  CacheRootDirectory: ./tmp
+  # What version of the Ruby interpreter is the inspected code intended to
+  # run on? (If there is more than one, set this to the lowest version.)
+  TargetRubyVersion: 2.4
+
+  DisplayCopNames: true
