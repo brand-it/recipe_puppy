@@ -23,7 +23,7 @@ module RecipePuppyClient
     def self.get(path, options = {})
       setup
       options[:query][:key] = RecipePuppyClient.configuration.api_key
-      results = super(path, options)
+      results = super(path, options.merge(format: :json))
       verify_response(results)
       objectize(results)
     end
@@ -43,7 +43,7 @@ module RecipePuppyClient
       new(parsed_response)
     end
 
-    def self.verify_response(results)
+    def self.verify_response(results) # rubocop:disable AbcSize, MethodLength, CyclomaticComplexity
       case results.response.code.to_i
       when 401
         raise RecipePuppyClient::AccessDenied, "#{results.request.last_uri}\n#{results.parsed_response}"
