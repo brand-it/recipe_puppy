@@ -3,8 +3,11 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 class @Recipes
 
+  # java script test for this code suck. Still experimenting with how to deal with JS tests
+  # TODO: make this sort of test better. expected results TRUE or FALSE
   checkLoadMoreItems: ->
     load_more = document.getElementById('load-more-recipes')
+    return if load_more == null
     window_size = window.innerHeight
     scroll_position = window.pageYOffset
     load_more_postion = load_more.offsetTop
