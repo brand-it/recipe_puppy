@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.recipepuppy.com/api/?key=&p=100000000000000&page=1&q=Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+      - Sun, 10 Sep 2017 05:05:55 GMT
+      Server:
+      - Apache/2.2.9 (Ubuntu) PHP/5.2.6-2ubuntu4.6 with Suhosin-Patch mod_ssl/2.2.9
+        OpenSSL/0.9.8g mod_wsgi/4.5.7 Python/2.6
+      X-Powered-By:
+      - PHP/5.2.6-2ubuntu4.6
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '3606'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\">\n  <head>\n    <title>404 File Not
+        Found</title>\n    <link href=\"/cssjs/style.css?6\" type=\"text/css\" media=\"screen\"
+        rel=\"stylesheet\">\n    <link rel=\"shortcut icon\" href=\"/favicon.ico\">\n
+        \   <link rel=\"search\" type=\"application/opensearchdescription+xml\" title=\"Recipe
+        Puppy: Search by Ingredients\" href=\"http://www.recipepuppy.com/rpopen.xml\">\n
+        \   <link rel=\"search\" type=\"application/opensearchdescription+xml\" title=\"Recipe
+        Puppy: Search by Keyword\" href=\"http://www.recipepuppy.com/rpkeyword.xml\">\n
+        \ </head>\n  <body>\n    <div class=\"header\">\n      <h1><a href=\"/\"><img
+        src=\"/img/logonew.png\" title=\"Search Recipes by Ingredients and Keywords\"
+        alt=\"Search Recipes by Ingredients and Keywords\" /></a></h1>\n    </div>\n
+        \   <div class=\"nav\"> \n    </div>\n    <div class=\"main\">\n      <h2>404
+        File Not Found</h2> \n    </div>\n    <div style=\"clear:both\"></div>\n    <div
+        class=\"foot\">\n      <div class=\"column\">\n        <h4>About</h4>\n        <a
+        href=\"http://blog.recipepuppy.com/\">Blog</a><br>\n        <a href=\"/about/us\">About
+        Us</a><br>\n        <a href=\"/about/contact\">Contact Us</a><br>\n        <a
+        href=\"/top/search\">Top Searches</a><br>\n        <a href=\"/privacy\">Privacy
+        Policy</a><br>\n      </div>\n      <div class=\"column\">\n        <h4>On
+        the Web</h4>\n        <a href=\"http://www.facebook.com/pages/Recipe-Puppy-Search-for-recipes-by-ingredients/54865354493#/pages/Recipe-Puppy-Search-for-recipes-by-ingredients/54865354493\">Facebook</a><br>\n
+        \       <a href=\"http://twitter.com/recipepuppy/\">Twitter</a><br>\n        <a
+        href=\"http://twitter.com/recipebot/\">Twitter Recipe Search Bot</a><br>\n
+        \     </div>\n      <div class=\"column\">\n        <h4>Tell your Friends</h4>\n<!--
+        AddThis Button BEGIN -->\n<script type=\"text/javascript\">\nvar addthis_share
+        = \n{ \n    title: 'Recipe Puppy, an ingredient based recipe search engine',\n
+        \   url: 'http://www.recipepuppy.com',\n    templates: {\n                   twitter:
+        'check out {{url}}, an ingredient based recipe search engine (@recipepuppy
+        and @recipebot)'\n               }\n}\n</script>\n<div class=\"addthis_toolbox\">\n<a
+        class=\"addthis_button_email\" title=\"Share Recipe Puppy via Email\">&nbsp;Email</a><br>\n<a
+        class=\"addthis_button_twitter\" title=\"Share Recipe Puppy via Twitter\">&nbsp;Twitter</a><br>\n<a
+        class=\"addthis_button_facebook\" title=\"Share Recipe Puppy via Facebook\">&nbsp;Facebook</a><br>\n<a
+        class=\"addthis_button_myspace\" title=\"Share Recipe Puppy via MySpace\">&nbsp;MySpace</a><br>\n<a
+        href=\"http://www.addthis.com/bookmark.php?v=250\" class=\"addthis_button_expanded\">&nbsp;More</a><br>\n</div>\n<script
+        type=\"text/javascript\" src=\"http://s7.addthis.com/js/250/addthis_widget.js?pub=kbrower\"></script>\n<!--
+        AddThis Button END -->\n\n\n      </div>\n      <div class=\"column\">\n        <h4>Tools</h4>\n
+        \               <a href=\"/widgets/\">Add to your Website</a><br>\n        <a
+        href=\"http://www.webmynd.com/html/recipepuppy.html\">Search alongside Google</a><br>\n
+        \       <a href=\"http://contenture.com/?s=34391\">Support this Site and Remove
+        Ads</a><br>\n        <a href=\"/iphone/\">Recipe Puppy for iPhone</a><br>\n
+        \     </div>\n      <div class=\"column\">\n        &copy;2017 RecipePuppy.com\n
+        \     </div>\n      <div style=\"clear:both\"></div>\n    </div>\n    <div
+        style=\"clear:both\"></div>\n \n\n    <script src=\"http://static.getclicky.com/73611.js\"
+        type=\"text/javascript\"></script>\n    <noscript><p><img alt=\"Clicky\" width=\"1\"
+        height=\"1\" src=\"http://static.getclicky.com/73611-db7.gif\" /></p></noscript>\n\n
+        \ </body>\n</html>\n"
+    http_version: 
+  recorded_at: Sun, 10 Sep 2017 05:07:09 GMT
+recorded_with: VCR 3.0.3

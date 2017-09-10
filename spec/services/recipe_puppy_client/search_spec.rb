@@ -28,7 +28,15 @@ RSpec.describe RecipePuppyClient::Search do
           RecipePuppyClient::Search.where(query: 'Test', page: 5)
         end
       end
-      it { expect(subject.recipes.map{ |x| x['title'] }).to include('Apple Cranberry Cider') }
+      it { expect(subject.recipes.map { |x| x['title'] }).to include('Apple Cranberry Cider') }
+    end
+    context 'how does it handle pages not found' do
+      subject do
+        VCR.use_cassette 'recipe_puppy/search_page_of_range' do
+          RecipePuppyClient::Search.where(query: 'Test', page: 100_000_000_000_000)
+        end
+      end
+      it { expect(subject.recipes).to eq([]) }
     end
   end
 end

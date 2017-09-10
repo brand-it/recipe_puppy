@@ -4,7 +4,11 @@ module RecipePuppyClient
   class Search < RecipePuppyClient::Base
     attr_accessor :recipes
     def initialize(results)
-      self.recipes = results.parsed_response['results']
+      if results
+        self.recipes = results.parsed_response['results']
+      else
+        self.recipes = []
+      end
     end
 
     def self.where(query: nil, page: 1, ingredients: [])
@@ -13,6 +17,9 @@ module RecipePuppyClient
       query.reject! { |_k, v| v.nil? || v.size.zero? }
       query[:page] ||= 1 # default page to one if not provided. THis is just a fail safe
       get('/', query: query)
+    rescue RecipePuppyClient::InternalServerError, JSON::ParserError => exception
+      Rails.logger.warn(exception.message)
+      RecipePuppyClient::Search.new(nil)
     end
   end
 end
