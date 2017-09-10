@@ -1,0 +1,4 @@
+tr
+  td= image_tag recipe['thumbnail'], width: '50'
+  td= link_to highlight(recipe['title'], (params[:recipe][:query] if params[:recipe])), recipe['href']
+  td= highlight(recipe['ingredients'], (params[:recipe][:query] if params[:recipe]))

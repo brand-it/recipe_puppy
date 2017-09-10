@@ -1,0 +1,16 @@
+doctype html
+html lang="en"
+  head
+    = render 'layouts/header'
+
+  body
+    .container
+      nav.navbar.navbar-expand-lg.navbar-light.bg-light.mb-3
+        a.navbar-brand Recipe Puppy
+        button.navbar-toggler ata-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              = link_to 'Home', :recipes, class: 'nav-link'
+      = yield

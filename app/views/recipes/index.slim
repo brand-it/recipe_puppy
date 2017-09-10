@@ -1,0 +1,23 @@
+#recipes
+  = form_for :recipe, html: { class: 'mb-3' }, method: :get do |f|
+    .input-group
+      = f.text_field :query, value: (params[:recipe][:query] if params[:recipe]), class: 'form-control text-center form-control-lg', placeholder: 'Search For Recipe', required: true
+      span.input-group-btn
+        = f.button class: 'btn btn-secondary btn-lg' do
+          = fa_icon 'search'
+  - if @recipes.any?
+    table.table
+      thead
+        tr
+          th
+          th Title
+          th Ingredients
+      tbody#table-recipes-body
+        = render partial: 'recipe', collection: @recipes
+        = render partial: 'load_more', locals: { page: 2 }
+  - else
+    section.jumbotron.jumbotron-fluid.text-center
+      .container
+        h1.display-3
+          | Search For Recipe
+        p.lead Looking for a recipe. Why not try out an omelet

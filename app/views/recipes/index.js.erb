@@ -1,0 +1,8 @@
+recipes = new Recipes();
+recipes.removeCurrentLoadingMore();
+<% @recipes.each do |recipe| %>
+recipes.appendRecipeToTable("<%=j render partial: 'recipe', object: recipe %>");
+<% end %>
+<% if @recipes.any? %>
+recipes.appendRecipeToTable("<%=j render partial: 'load_more', locals: { page: params[:recipe][:page].to_i + 1 } %>");
+<% end %>
