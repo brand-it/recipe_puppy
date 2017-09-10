@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.recipepuppy.com/api/?key=&p=5&page=1&q=Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 10 Sep 2017 04:44:32 GMT
+      Server:
+      - Apache/2.2.9 (Ubuntu) PHP/5.2.6-2ubuntu4.6 with Suhosin-Patch mod_ssl/2.2.9
+        OpenSSL/0.9.8g mod_wsgi/4.5.7 Python/2.6
+      X-Powered-By:
+      - PHP/5.2.6-2ubuntu4.6
+      Set-Cookie:
+      - kohanasession=8e140d5dbc5aebbba5fe85ffc76f1383; expires=Sun, 10 Sep 2017 06:44:32
+        GMT; path=/
+      - kohanasession=8e140d5dbc5aebbba5fe85ffc76f1383; expires=Sun, 10-Sep-2017 06:44:32
+        GMT; path=/
+      - kohanasession_data=c2Vzc2lvbl9pZHxzOjMyOiI4ZTE0MGQ1ZGJjNWFlYmJiYTVmZTg1ZmZjNzZmMTM4MyI7dG90YWxfaGl0c3xpOjE7X2tmX2ZsYXNoX3xhOjA6e311c2VyX2FnZW50fHM6MDoiIjtpcF9hZGRyZXNzfHM6MTU6IjE3My4xNzQuMTM2LjEwOCI7bGFzdF9hY3Rpdml0eXxpOjE1MDUwMTg2NzI7;
+        expires=Sun, 10-Sep-2017 06:44:32 GMT; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '2721'
+      Content-Type:
+      - text/javascript
+    body:
+      encoding: UTF-8
+      string: '{"title":"Recipe Puppy","version":0.1,"href":"http:\/\/www.recipepuppy.com\/","results":[{"title":"Apple
+        Cranberry Cider","href":"http:\/\/allrecipes.com\/Recipe\/Apple-Cranberry-Cider\/Detail.aspx","ingredients":"apple
+        cider, brown sugar, cinnamon, cloves, cranberry juice","thumbnail":""},{"title":"Pork
+        Hash Brown Bake","href":"http:\/\/allrecipes.com\/Recipe\/Pork-Hash-Brown-Bake\/Detail.aspx","ingredients":"butter,
+        chicken bouillon granule, pork, cornflakes, flour, milk, potato, salt, sour
+        cream, water","thumbnail":""},{"title":"Light ''n'' Creamy Mashed Potatoes","href":"http:\/\/allrecipes.com\/Recipe\/Light-n-Creamy-Mashed-Potatoes\/Detail.aspx","ingredients":"chives,
+        cream cheese, garlic powder, milk, paprika, black pepper, potato, salt, sour
+        cream","thumbnail":"http:\/\/img.recipepuppy.com\/1260.jpg"},{"title":"Easy
+        Thai Beef or Chicken Salad","href":"http:\/\/allrecipes.com\/Recipe\/Easy-Thai-Beef-or-Chicken-Salad\/Detail.aspx","ingredients":"green
+        pepper, chicken, cucumber, fish sauce, garlic powder, lettuce, onions, red
+        pepper flakes, salt, lime juice, sugar, tomato, vegetable oil, water, rice","thumbnail":""},{"title":"Salmon
+        with Spinach Sauce","href":"http:\/\/allrecipes.com\/Recipe\/Salmon-with-Spinach-Sauce\/Detail.aspx","ingredients":"dijon
+        mustard, garlic salt, lemon, lemon juice, lemon pepper, mayonnaise, water","thumbnail":"http:\/\/img.recipepuppy.com\/1393.jpg"},{"title":"Sirloin
+        with Mushroom Sauce","href":"http:\/\/allrecipes.com\/Recipe\/Sirloin-with-Mushroom-Sauce\/Detail.aspx","ingredients":"beef
+        broth, beef, vegetable oil, black pepper, red wine","thumbnail":"http:\/\/img.recipepuppy.com\/1394.jpg"},{"title":"Vegetarian
+        Shepherd''s Pie II","href":"http:\/\/allrecipes.com\/Recipe\/Vegetarian-Shepherds-Pie-II\/Detail.aspx","ingredients":"carrot,
+        flour, lentils, onions, barley, potato, salt, vegetable broth, walnut, water,
+        vegemite","thumbnail":"http:\/\/img.recipepuppy.com\/1729.jpg"},{"title":"Chunky
+        Banana Chip Ice Cream","href":"http:\/\/allrecipes.com\/Recipe\/Chunky-Banana-Chip-Ice-Cream\/Detail.aspx","ingredients":"banana,
+        lemon juice, semisweet chocolate chips, sugar, vanilla extract","thumbnail":"http:\/\/img.recipepuppy.com\/2168.jpg"},{"title":"Maple-Pecan
+        Pork Chops","href":"http:\/\/allrecipes.com\/Recipe\/Maple-Pecan-Pork-Chops\/Detail.aspx","ingredients":"apple
+        juice, butter, maple syrup, pecan, black pepper, dijon mustard","thumbnail":"http:\/\/img.recipepuppy.com\/2246.jpg"},{"title":"Brown
+        Rice Casserole","href":"http:\/\/allrecipes.com\/Recipe\/Brown-Rice-Casserole\/Detail.aspx","ingredients":"rice,
+        carrot, celery, cheddar cheese, oregano, thyme, garlic, onions, black pepper,
+        salt, split peas, vegetable oil, water","thumbnail":""}]}'
+    http_version: 
+  recorded_at: Sun, 10 Sep 2017 04:45:46 GMT
+recorded_with: VCR 3.0.3
